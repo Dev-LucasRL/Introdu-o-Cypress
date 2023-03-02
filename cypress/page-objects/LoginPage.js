@@ -6,10 +6,17 @@ class LoginPage{
         this.LoginButton = cy.get('.btn');
     }
 
-    login(mail, pass){
+    digitarEmail(mail){
         this.EmailField.type(mail);
+
+    }
+
+    digitarPass(pass){
         this.PassField.type(pass);
+    }
+
+    loginButton(){
         this.LoginButton.click();
     }
 }
-export default LoginPage
+export default LoginPage;
